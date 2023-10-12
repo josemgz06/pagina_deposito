@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <title> DEPOSITO Z- Producto</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+        @font-face {
+            font-family: Oswald-Stencil;
+            src: url(./font/Oswald-Stencil.ttf);
+        }
+
+        * {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .contact_fixed a {
+            color: white;
+            text-decoration: none;
+            margin: 0.2rem 0.5rem;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+        .contact_fixed a:hover {
+            opacity: .7;
+        }
+
+        .me-1 {
+            margin-right: 0.5rem;
+        }
+
+        .text-custom {
+            color: #F5B041 !important;
+        }
+
+        .text-custom-secondary {
+            color: #7E7E7E;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+        .bg-custom {
+            background: #F39C12  ;
+        }
+
+        .bg-custom-secondary {
+            background: #7E7E7E;
+        }
+
+        .bg-custom-third:hover {
+            opacity: .6;
+        }
+
+        .font-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-extra-bold {
+            font-weight: 800;
+        }
+
+
+        .btn-custom-outline {
+            border: 2px solid #F5B041;
+            color: #F5B041;
+            text-align: center;
+            background: transparent;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .btn-custom-outline:hover {
+            background:#F5B041;
+            color: white;
+        }
+
+        .btn-custom {
+            border: 2px solid #F5B041;
+            background: #F5B041;
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+
+        .btn-custom:hover {
+            background: #F39C12;
+            border: 2px solid #F5B041;
+        }
+
+        .navbar {
+            margin: 0 5rem;
+
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-style: outset;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-nav .nav-link {
+            font-family: Oswald-Stencil;
+            padding-bottom: 2rem;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+            font-weight: bold;
+
+            letter-spacing: -1px;
+
+            font-size: 1.3rem;
+        }
+
+        .about {
+            border-top: 20px solid white;
+            background: #D3D2D2;
+        }
+
+        .about .c {
+            margin-left: 8rem;
+            margin-right: 8rem;
+
+            position: relative;
+            top: -6vh;
+        }
+
+        .about .ititle {
+            color: #7E7E7E;
+            display: flex;
+            align-items: center;
+        }
+
+        .about .ititle h3 {
+            padding-left: 10px;
+            font-style: italic;
+        }
+
+        .about p {
+            color: #848484;
+            font-size: 1rem;
+
+            font-weight: bold;
+
+            margin-top: 2rem;
+            letter-spacing: -1px;
+        }
+
+        footer p {
+            color: white;
+            font-size: 0.7rem;
+            margin: 0;
+
+            padding: 1rem;
+        }
+
+        footer a {
+            color: white;
+            font-size: 0.7rem;
+            padding: 1rem;
+
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+        .history h1 {
+            font-size: 1.5rem;
+            color: #848484;
+            font-weight: bold;
+        }
+
+        .history p {
+            text-align: left;
+            color: #848484;
+            font-size: 1.1rem;
+
+            font-weight: bold;
+
+            margin-top: 2rem;
+            letter-spacing: -0.5px;
+
+            white-space: pre-line;
+        }
+
+        .normal {
+            background: #D3D2D2;
+        }
+
+        .normal h1 {
+            font-size: 1.8rem;
+            color: #848484;
+            font-weight: bold;
+            font-family: Oswald-Stencil;
+        }
+
+        .contact p {
+            color: #848484;
+            font-size: 1rem;
+
+            font-weight: bold;
+
+            margin-top: 2rem;
+            letter-spacing: -1px;
+            white-space: pre-line;
+        }
+        .logo {
+            display: none;
+        }  
+    </style>
+</head>
+    <div class="container">
+        <header class="bg-custom pb-3">
+            <div class="logo text-center py-3">
+                <img src=imgs/logo.png class="w-50"><br>
+
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-between w-100 align-items-center">
+                        <a class="nav-item nav-link " href="../index.html">INICIO</a>
+                        <a class="nav-item nav-link " href="#">TIENDA EN LINEA</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="banner mx-3 mt-4">
+                <img src="" class="w-100">
+            </div>
+            <meta name="google-site-verification" content="BOHtSMEqd0tzWqJbVvuYMm3nd3eUrnkeYemRYBbdsT4" />
+        </header>
+        <STYLE type="text/css">
+            h1{text-align:center}
+        
+                body{
+                  background-image:url("../vermas/imgs/Madera.jpeg") ;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-attachment: fixed;
+                  background-position: center center;
+                }
+  
+        </STYLE>
+<div class="bg-white p-4">            
+    <div class="row mx-0 align-items-center">
+        <div class="col-md-4">
+            <img src=imgs/p2.png class="w-100">
+        </div>
+        
+        <div class="col-md-8">
+            <h1 class="h3">ARMEX PARA CASTILLO 10 X 10 CM DE 6 M ( TRIANGULAR )</h1>
+            <p>Precio: $ 290.00</p>
+            <input class="w-50 form-control" type="hidden" min="1" max="50" value="1" name="amount_13" pattern="\d*">
+            <a href="../index.html" class="btn btn-custom font-sans font-bold" onclick="cart_add(13, event);">VOlVER</a>    
+        </div>
+    </div>
+</div>
+<footer class="p-2" style="background: black;">
+    <div class="d-flex align-items-center justify-content-between">
+        <p>FRONTINO, ANTIOQUIA (57) 3206999558</p>
+    </div>
+    </div>
+</html>
